@@ -28,7 +28,7 @@ const Login = () => {
       <div className='input-box'>
         <input type='text' className='input' placeholder='id' ref={el => (loginInputValue.current[0] = el)} onKeyDown={onKeyDown} />
         <input type='password' className='input' placeholder='password' ref={el => (loginInputValue.current[1] = el)} onKeyDown={onKeyDown} />
-        <input type='submit' className='input login-input' value='로그인' onClick={goMain} />
+        <input type='button' className='input login-input' value='로그인' onClick={goMain} />
       </div>
     </SignInContainer>
   );
@@ -71,6 +71,10 @@ const SignInContainer = styled.div`
       &:focus {
         border: 3px solid ${mainFontColor};
       }
+    }
+
+    .login-input {
+      background: #efefef;
     }
 
     .login-input:hover {
