@@ -2,34 +2,21 @@
   "navlist": [
     {
       "id": 1,
-      "title": "ABOUT",
-      "path": "about"
+      "title": "User",
+      "path": "/index",
+      "link": "https://user-images.githubusercontent.com/104422865/196127406-131d571d-b7e8-428d-9eaf-9bdc12d66711.png"
     },
     {
       "id": 2,
-      "title": "SERVICE",
-      "path": "service"
+      "title": "Board",
+      "path": "/board",
+      "link": "https://user-images.githubusercontent.com/104422865/196125934-69484e9d-914e-4680-9dcc-42b22730aa5e.png"
     },
     {
       "id": 3,
-      "title": "XR BUSINESS",
-      "path": "xr-business"
-    },
-    {
-      "id": 4,
-      "title": "CONTACT",
-      "path": "contact"
-    },
-    {
-      "id": 5,
-      "title": "MEDIA",
-      "path": "media"
-    },
-    {
-      "id": 6,
-      "title": "H.R",
-      "path": "hr"
+      "title": "Setting",
+      "path": "/setting",
+      "link": "https://user-images.githubusercontent.com/104422865/196131325-16e9e528-e925-4f96-852b-51b19e2ddab4.png"
     }
-  ],
-  "about": [{}]
+  ]
 }
