@@ -6,22 +6,30 @@ import { mainFontColor, mainLogo } from '../../Theme';
 const Login = () => {
   const loginInputValue = useRef([]);
   const navigate = useNavigate();
+
   const goMain = () => {
     if (loginInputValue.current[0].value === 'user' && loginInputValue.current[1].value === '1234') {
+      alert('로그인 성공');
       navigate('/index');
     } else {
       alert('id와 password가 일치하지 않습니다.');
     }
   };
 
+  const onKeyDown = e => {
+    if (e.key === 'Enter') {
+      goMain();
+    }
+  };
+
   return (
     <SignInContainer>
       <Link to='/' className='logo' />
-      <form className='input-box'>
-        <input type='text' className='input' placeholder='id' ref={el => (loginInputValue.current[0] = el)} />
-        <input type='password' className='input' placeholder='password' ref={el => (loginInputValue[1] = el)} />
+      <div className='input-box'>
+        <input type='text' className='input' placeholder='id' ref={el => (loginInputValue.current[0] = el)} onKeyDown={onKeyDown} />
+        <input type='password' className='input' placeholder='password' ref={el => (loginInputValue.current[1] = el)} onKeyDown={onKeyDown} />
         <input type='submit' className='input login-input' value='로그인' onClick={goMain} />
-      </form>
+      </div>
     </SignInContainer>
   );
 };
