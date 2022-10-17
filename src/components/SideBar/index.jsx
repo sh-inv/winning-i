@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useEffect, useRef, useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { mainFontColor } from '../../Theme';
 
@@ -8,6 +8,7 @@ const SideBar = () => {
   const [listView, setListView] = useState(false);
   const [navList, setNavList] = useState([]);
   const navigate = useNavigate();
+  const location = useLocation();
   const ref = useRef();
 
   useEffect(() => {
@@ -43,28 +44,30 @@ const SideBar = () => {
   }, [listView]);
 
   return (
-    <NavTab ref={ref} listView={listView} onClick={() => setListView(!listView)}>
-      <div className='nav'>
-        {navList.map(nav => (
-          <div key={nav.title} className='nav-list'>
-            <img src={nav.link} alt={nav.title} className='nav-img' />
-            {listView && (
-              <NavLink to={nav.path} className='nav-link' onClick={() => setListView(false)}>
-                {nav.title}
-              </NavLink>
-            )}
-          </div>
-        ))}
-        <button className='logout-btn'>
-          <img src='https://user-images.githubusercontent.com/104422865/196146291-9a0e4023-00e4-4fe6-a6f6-a6fec88af3e6.png' alt='logout' className='logout-btn-img' />
-          {listView && (
-            <div className='logout-btn-link' onClick={logout}>
-              Logout
+    location.pathname !== '/' && (
+      <NavTab ref={ref} listView={listView} onClick={() => setListView(!listView)}>
+        <div className='nav'>
+          {navList.map(nav => (
+            <div key={nav.title} className='nav-list'>
+              <img src={nav.link} alt={nav.title} className='nav-img' />
+              {listView && (
+                <NavLink to={nav.path} className='nav-link' onClick={() => setListView(false)}>
+                  {nav.title}
+                </NavLink>
+              )}
             </div>
-          )}
-        </button>
-      </div>
-    </NavTab>
+          ))}
+          <button className='logout-btn'>
+            <img src='https://user-images.githubusercontent.com/104422865/196146291-9a0e4023-00e4-4fe6-a6f6-a6fec88af3e6.png' alt='logout' className='logout-btn-img' />
+            {listView && (
+              <div className='logout-btn-link' onClick={logout}>
+                Logout
+              </div>
+            )}
+          </button>
+        </div>
+      </NavTab>
+    )
   );
 };
 
