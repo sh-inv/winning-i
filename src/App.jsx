@@ -9,11 +9,17 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <SideBar />
       <Center>
         <Routes>
           <Route path='/' element={<Login />} />
-          <Route path='/index' element={<Index />} />
+          <Route
+            path='/index'
+            element={
+              <SideBar>
+                <Index />
+              </SideBar>
+            }
+          />
         </Routes>
       </Center>
     </>
