@@ -23,9 +23,9 @@ const PostingBtn = ({ isValue, QuillRef, titleRef }) => {
         const year = date.getFullYear();
         const month = date.getMonth();
         const day = date.getDate();
-        const { data } = await axios.post(`${import.meta.env.VITE_BASE_URL}/postlist`, {
+        const { data } = await axios.post(`${import.meta.env.VITE_BASE_URL}/board`, {
           title: titleValue,
-          user: '유저1',
+          user: 'winning-i',
           date: `${year}.${month}.${day}`,
           text: quillValue,
         });

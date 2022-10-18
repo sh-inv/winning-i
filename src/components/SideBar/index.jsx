@@ -79,7 +79,7 @@ const NavTab = styled.span`
   top: 0;
   left: 0;
   height: 100%;
-  width: ${({ listView }) => (listView ? '500px' : '170px')};
+  width: ${({ listView }) => (listView ? '500px' : '130px')};
   transition: all 0.7s;
   border-right: 1px solid #dfdfdf;
   background: ${({ listView }) => (listView ? '#dfdfdf' : 'transparent')};
@@ -95,7 +95,7 @@ const NavTab = styled.span`
       margin-bottom: 100px;
 
       .nav-img {
-        width: 60px;
+        width: 40px;
       }
 
       .nav-link {
@@ -114,7 +114,7 @@ const NavTab = styled.span`
       padding: 0;
 
       .logout-btn-img {
-        width: 60px;
+        width: 40px;
       }
 
       .logout-btn-link {

@@ -7,7 +7,6 @@ const Post = ({ post }) => {
 
   return (
     <PostBox>
-      <div className='post-number post'>{id}</div>
       <Link to={`/board/${id}`} className='post-title'>
         {title}
       </Link>
@@ -27,16 +26,13 @@ const PostBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .post-number {
-    width: 15%;
+    margin-left: 5px;
   }
 
   .post-title {
     display: flex;
     align-items: center;
-    width: 40%;
+    width: 55%;
     font-size: 16px;
     color: ${mainFontColor};
   }

@@ -24,7 +24,7 @@ const PostList = () => {
     window.addEventListener('scroll', showMore);
     (async () => {
       try {
-        const { data } = await axios.get(`${import.meta.env.VITE_BASE_URL}/postlist?_sort=id&_order=DESC`);
+        const { data } = await axios.get(`${import.meta.env.VITE_BASE_URL}/board?_sort=id&_order=DESC`);
         setPostList(data.slice(0, limit));
       } catch (error) {
         console.log(error);
@@ -36,7 +36,6 @@ const PostList = () => {
   return (
     <PostListBox>
       <div className='header'>
-        <div className='number top'>No.</div>
         <div className='title top'>제목</div>
         <div className='writer top'>작성자</div>
         <div className='date top'>작성시간</div>
@@ -62,14 +61,15 @@ const PostListBox = styled.div`
       align-items: center;
       justify-content: center;
       font-size: 16px;
-    }
+      margin-left: 5px;
 
-    .number {
-      width: 15%;
+      :nth-child(1) {
+        margin-left: 0;
+      }
     }
 
     .title {
-      width: 40%;
+      width: 55%;
     }
 
     .writer {
