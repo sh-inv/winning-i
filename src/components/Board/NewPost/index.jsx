@@ -7,8 +7,8 @@ import PostingBtn from './PostingBtn';
 
 const NewPost = () => {
   const titleRef = useRef();
-  const quillRef = useRef();
-  const [contents, setContents] = useState('');
+  const QuillRef = useRef();
+  const [isValue, setIsValue] = useState(true);
   const modules = useMemo(
     () => ({
       toolbar: {
@@ -23,25 +23,32 @@ const NewPost = () => {
     []
   );
 
+  const text = () => {
+    if (titleRef.current.value && QuillRef.current.value) setIsValue(false);
+    else setIsValue(true);
+  };
+
   return (
     <NewPostBox>
       <h3>제목</h3>
-      <input className='title-input' type='text' ref={titleRef} placeholder='제목을 입력해주세요' />
+      <input className='title-input' type='text' ref={titleRef} placeholder='제목을 입력해주세요' onChange={text} />
       <h3>본문</h3>
       <ReactQuill
         className='quill'
         ref={element => {
           if (element !== null) {
-            quillRef.current = element;
+            QuillRef.current = element;
           }
         }}
-        value={contents}
-        onChange={setContents}
+        onChange={text}
+        // onKeyDown={() => {
+        //   console.log(isValue);
+        // }}
         modules={modules}
         theme='snow'
         placeholder='내용을 입력해주세요.'
       />
-      <PostingBtn />
+      <PostingBtn isValue={isValue} titleRef={titleRef} QuillRef={QuillRef} />
     </NewPostBox>
   );
 };

@@ -18,7 +18,7 @@ const Board = () => {
 const BoardBox = styled.div`
   width: 100%;
   .title {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .board-text-write {

@@ -23,7 +23,7 @@ const PostBox = styled.div`
   border-bottom: 1px solid #dfdfdf;
 
   .post {
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +37,7 @@ const PostBox = styled.div`
     display: flex;
     align-items: center;
     width: 40%;
-    font-size: 20px;
+    font-size: 16px;
     color: ${mainFontColor};
   }
 
