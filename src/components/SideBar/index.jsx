@@ -127,16 +127,16 @@ const NavTab = styled.span`
   }
 
   @media screen and (${mobileMaxWidth}) {
-    width: ${({ listView }) => (listView ? '100%' : '80px')};
+    width: ${({ listView }) => (listView ? '100%' : '65px')};
 
     .nav {
-      margin-top: 20px;
+      margin-top: 30px;
 
       .nav-list {
         margin-bottom: 70px;
 
         .nav-img {
-          width: 40px;
+          width: 35px;
         }
 
         .nav-link {
@@ -154,7 +154,7 @@ const NavTab = styled.span`
         padding: 0;
 
         .logout-btn-img {
-          width: 40px;
+          width: 35px;
         }
 
         .logout-btn-link {
