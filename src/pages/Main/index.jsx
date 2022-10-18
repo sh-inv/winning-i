@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Main = () => {
-  return <Div>asdfadf</Div>;
+  return <Div>그래프 페이지</Div>;
 };
 
 const Div = styled.div`
