@@ -20,7 +20,7 @@ const Loading = () => {
 const Spinner = styled.div`
   width: 100px;
   height: 100px;
-  margin: 50px auto;
+  margin: 20px auto;
 
   svg {
     width: 90%;

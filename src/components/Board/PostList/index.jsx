@@ -42,7 +42,7 @@ const PostList = () => {
         <div className='date top'>작성시간</div>
       </div>
       {postList.map((post, i) => (
-        <Post key={i} post={post} />
+        <Post key={i} post={post} i={i} />
       ))}
       {isLoading && <Loading />}
     </PostListBox>
@@ -61,7 +61,7 @@ const PostListBox = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 18px;
+      font-size: 16px;
     }
 
     .number {
