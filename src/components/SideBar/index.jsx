@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import { mainFontColor } from '../../Theme';
+import { mainFontColor, mobileMaxWidth } from '../../Theme';
 
 const SideBar = () => {
   const [listView, setListView] = useState(false);
@@ -72,20 +72,21 @@ const SideBar = () => {
 };
 
 const NavTab = styled.span`
+  display: flex;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  width: ${({ listView }) => (listView ? '400px' : '170px')};
+  width: ${({ listView }) => (listView ? '500px' : '170px')};
   transition: all 0.7s;
   border-right: 1px solid #dfdfdf;
   background: ${({ listView }) => (listView ? '#dfdfdf' : 'transparent')};
-  opacity: 0.9;
 
   .nav {
     display: flex;
     flex-direction: column;
-    margin: 60px 0 0 55px;
+    margin-top: 60px;
 
     .nav-list {
       display: flex;
@@ -125,12 +126,11 @@ const NavTab = styled.span`
     }
   }
 
-  @media screen and (max-width: 639px) {
+  @media screen and (${mobileMaxWidth}) {
     width: ${({ listView }) => (listView ? '100%' : '80px')};
-    opacity: 1;
 
     .nav {
-      margin: 20px 0 0 20px;
+      margin-top: 20px;
 
       .nav-list {
         margin-bottom: 70px;
