@@ -16,7 +16,7 @@ function ScrollToTopBtn() {
 
 const Button = styled.button`
   position: fixed;
-  bottom: 60px;
+  bottom: 30px;
   right: 30px;
   width: 64px;
   height: 64px;
