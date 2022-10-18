@@ -24,7 +24,7 @@ const PostList = () => {
     window.addEventListener('scroll', showMore);
     (async () => {
       try {
-        const { data } = await axios.get(`${import.meta.env.VITE_BASE_URL}/postlist`);
+        const { data } = await axios.get(`${import.meta.env.VITE_BASE_URL}/postlist?_sort=id&_order=DESC`);
         setPostList(data.slice(0, limit));
       } catch (error) {
         console.log(error);
