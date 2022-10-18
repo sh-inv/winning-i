@@ -66,7 +66,7 @@ const SignInContainer = styled.div`
       border: 1px solid ${mainFontColor};
       border-radius: 10px;
       padding: 0 15px;
-      transition: all ease-in-out 0.3s;
+      transition: 0.5s;
 
       &:focus {
         border: 3px solid ${mainFontColor};

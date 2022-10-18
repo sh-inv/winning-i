@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import NewPost from '../../components/Board/NewPost';
+import NewPostBtn from '../../components/Board/NewPostBtn';
 import PostList from '../../components/Board/PostList';
 import { mobileMaxWidth } from '../../Theme';
 
@@ -8,7 +8,7 @@ const Board = () => {
     <BoardBox>
       <div className='board-text-write'>
         <h1 className='title'>게시판</h1>
-        <NewPost />
+        <NewPostBtn />
       </div>
       <PostList />
     </BoardBox>

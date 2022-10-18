@@ -72,6 +72,7 @@ const SideBar = () => {
 };
 
 const NavTab = styled.span`
+  z-index: 999;
   display: flex;
   justify-content: center;
   position: fixed;
