@@ -95,6 +95,13 @@ json-server ./db.json --port 8000
 npm run dev
 ```
 
+7. 메인 페이지(로그인)에서 아이디, 비밀번호를 입력해주세요.
+
+```
+id: user
+password: 1234
+```
+
 <br>
 <br>
 <br>
