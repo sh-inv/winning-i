@@ -8,15 +8,18 @@ import NotFound from '../NotFound';
 const DetailPage = () => {
   const [error, setError] = useState(false);
   const [content, setContent] = useState();
+  const [graphData, setgraphData] = useState();
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
     (async () => {
       try {
-        const { data } = await axios.get(`${import.meta.env.VITE_BASE_URL}${location.pathname}`);
-        setContent(data);
+        const detail = await axios.get(`${import.meta.env.VITE_BASE_URL}${location.pathname}`);
+        setContent(detail.data);
         setError(false);
+        const graph = await axios.get(`${import.meta.env.VITE_BASE_URL}/graphdata`);
+        setgraphData(graph.data);
       } catch (error) {
         setError(true);
         alert('통신에러');
@@ -30,6 +33,11 @@ const DetailPage = () => {
       (async () => {
         try {
           await axios.delete(`${import.meta.env.VITE_BASE_URL}${location.pathname}`);
+          let arr = [...graphData.postcount];
+          arr[arr.length - 1] -= 1;
+          await axios.patch(`${import.meta.env.VITE_BASE_URL}/graphdata`, {
+            postcount: arr,
+          });
           alert('게시글이 삭제되었습니다.');
           navigate('/board');
         } catch (error) {

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import SideBar from './components/SideBar';
 import GlobalStyle from './GlobalStyle';
 import Login from './pages/Login';
-import Main from './pages/Main';
+import Chart from './pages/Chart';
 import Board from './pages/Board';
 import NewPost from './components/Board/NewPost';
 import DetailPage from './components/DetailPage';
@@ -17,7 +17,7 @@ const App = () => {
         <SideBar />
         <Routes>
           <Route path='/' element={<Login />} />
-          <Route path='/index' element={<Main />} />
+          <Route path='/index' element={<Chart />} />
           <Route path='/board' element={<Board />} />
           <Route path='/board/:id' element={<DetailPage />} />
           <Route path='/board/newpost' element={<NewPost />} />
