@@ -19,6 +19,32 @@
       "link": "https://user-images.githubusercontent.com/104422865/196131325-16e9e528-e925-4f96-852b-51b19e2ddab4.png"
     }
   ],
+  "graphdata": {
+    "visitorcount": [
+      10,
+      41,
+      35,
+      51,
+      49,
+      62,
+      69,
+      91,
+      150,
+      46
+    ],
+    "postcount": [
+      44,
+      55,
+      41,
+      67,
+      22,
+      43,
+      45,
+      67,
+      90,
+      14
+    ]
+  },
   "board": [
     {
       "id": 1,
@@ -655,20 +681,6 @@
       "user": "유저",
       "date": "22.08.30",
       "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
-      "id": 92
-    },
-    {
-      "title": "제목테스트",
-      "user": "유저",
-      "date": "22.08.30",
-      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
-      "id": 93
-    },
-    {
-      "title": "제목테스트",
-      "user": "유저",
-      "date": "22.08.30",
-      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
       "id": 94
     },
     {
@@ -698,6 +710,27 @@
       "date": "2022.9.18",
       "text": "<ul><li class=\"ql-align-center\">위닝아이는 고객을 위한 혁신적인 서비스로&nbsp;새로운 세상을 만들기 위해 노력합니다.</li><li class=\"ql-align-center\">Sustainable Growth위닝아이는 고객에게 최고의 품질을 제공하고,&nbsp;최고의 경쟁력을 갖추기 위한 끊임없는 노력과&nbsp;지속적인 성장을 하겠습니다.</li><li class=\"ql-align-center\">Leading Biometrics Technology위닝아이는 생각의 한계를 넘어 상식을 바꾸는창조, 도전, 열정으로 바이오인식 기술의 패러다임을선도하는 글로벌 기업이 되겠습니다.</li></ul>",
       "id": 103
+    },
+    {
+      "title": "위닝아이 게시판 테스트",
+      "user": "winning-i",
+      "date": "2022.9.19",
+      "text": "<p>하나둘셋</p>",
+      "id": 104
+    },
+    {
+      "title": "게시글 카운트 체크",
+      "user": "winning-i",
+      "date": "2022.9.19",
+      "text": "<p>게시글</p>",
+      "id": 105
+    },
+    {
+      "title": "12341234",
+      "user": "winning-i",
+      "date": "2022.9.19",
+      "text": "<p>13241234</p>",
+      "id": 106
     }
   ]
 }
