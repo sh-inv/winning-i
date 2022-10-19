@@ -1,5 +1,6 @@
 import Chart from 'react-apexcharts';
 import styled from 'styled-components';
+import { mobileMaxWidth } from '../../../Theme';
 
 const AgeChart = () => {
   const chart = {
@@ -34,6 +35,12 @@ const AgeChart = () => {
   );
 };
 
-const AgeBox = styled.div``;
+const AgeBox = styled.div`
+  margin-bottom: 70px;
+
+  @media screen and (${mobileMaxWidth}) {
+    margin-bottom: 20px;
+  }
+`;
 
 export default AgeChart;
