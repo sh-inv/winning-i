@@ -2,9 +2,9 @@
   "navlist": [
     {
       "id": 1,
-      "title": "User",
+      "title": "Graph",
       "path": "/index",
-      "link": "https://user-images.githubusercontent.com/104422865/196127406-131d571d-b7e8-428d-9eaf-9bdc12d66711.png"
+      "link": "https://user-images.githubusercontent.com/104422865/196624372-27349536-7f2d-41a6-a5c9-bcfce76be141.png"
     },
     {
       "id": 2,
@@ -20,30 +20,8 @@
     }
   ],
   "graphdata": {
-    "visitorcount": [
-      10,
-      41,
-      35,
-      51,
-      49,
-      62,
-      69,
-      91,
-      150,
-      46
-    ],
-    "postcount": [
-      44,
-      55,
-      41,
-      67,
-      22,
-      43,
-      45,
-      67,
-      90,
-      14
-    ]
+    "visitorcount": [10, 41, 35, 51, 49, 62, 69, 91, 150, 46],
+    "postcount": [44, 55, 41, 67, 22, 43, 45, 67, 90, 14]
   },
   "board": [
     {
