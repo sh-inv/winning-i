@@ -1,4 +1,5 @@
-import { useRef } from 'react';
+import axios from 'axios';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { mainFontColor, mainLogo } from '../../Theme';
@@ -6,9 +7,32 @@ import { mainFontColor, mainLogo } from '../../Theme';
 const Login = () => {
   const loginInputValue = useRef([]);
   const navigate = useNavigate();
+  const [graphData, setgraphData] = useState();
+  useEffect(() => {
+    (async () => {
+      try {
+        const { data } = await axios.get(`${import.meta.env.VITE_BASE_URL}/graphdata`);
+        setgraphData(data);
+      } catch (error) {
+        alert('404 not found');
+        console.log(error);
+      }
+    })();
+  }, []);
 
   const goMain = () => {
     if (loginInputValue.current[0].value === 'user' && loginInputValue.current[1].value === '1234') {
+      (async () => {
+        try {
+          let arr = [...graphData.visitorcount];
+          arr[arr.length - 1] += 1;
+          await axios.patch(`${import.meta.env.VITE_BASE_URL}/graphdata`, {
+            visitorcount: arr,
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      })();
       alert('로그인 성공');
       navigate('/index');
     } else {
@@ -28,7 +52,7 @@ const Login = () => {
       <div className='input-box'>
         <input type='text' className='input' placeholder='id' ref={el => (loginInputValue.current[0] = el)} onKeyDown={onKeyDown} />
         <input type='password' className='input' placeholder='password' ref={el => (loginInputValue.current[1] = el)} onKeyDown={onKeyDown} />
-        <input type='submit' className='input login-input' value='로그인' onClick={goMain} />
+        <input type='button' className='input login-input' value='로그인' onClick={goMain} />
       </div>
     </SignInContainer>
   );
@@ -66,11 +90,15 @@ const SignInContainer = styled.div`
       border: 1px solid ${mainFontColor};
       border-radius: 10px;
       padding: 0 15px;
-      transition: all ease-in-out 0.3s;
+      transition: 0.5s;
 
       &:focus {
         border: 3px solid ${mainFontColor};
       }
+    }
+
+    .login-input {
+      background: #efefef;
     }
 
     .login-input:hover {

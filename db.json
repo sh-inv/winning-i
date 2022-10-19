@@ -2,34 +2,742 @@
   "navlist": [
     {
       "id": 1,
-      "title": "ABOUT",
-      "path": "about"
+      "title": "Graph",
+      "path": "/index",
+      "link": "https://user-images.githubusercontent.com/104422865/196624372-27349536-7f2d-41a6-a5c9-bcfce76be141.png"
     },
     {
       "id": 2,
-      "title": "SERVICE",
-      "path": "service"
+      "title": "Board",
+      "path": "/board",
+      "link": "https://user-images.githubusercontent.com/104422865/196125934-69484e9d-914e-4680-9dcc-42b22730aa5e.png"
     },
     {
       "id": 3,
-      "title": "XR BUSINESS",
-      "path": "xr-business"
-    },
-    {
-      "id": 4,
-      "title": "CONTACT",
-      "path": "contact"
-    },
-    {
-      "id": 5,
-      "title": "MEDIA",
-      "path": "media"
-    },
-    {
-      "id": 6,
-      "title": "H.R",
-      "path": "hr"
+      "title": "Setting",
+      "path": "/setting",
+      "link": "https://user-images.githubusercontent.com/104422865/196131325-16e9e528-e925-4f96-852b-51b19e2ddab4.png"
     }
   ],
-  "about": [{}]
+  "graphdata": {
+    "visitorcount": [
+      10,
+      41,
+      35,
+      51,
+      49,
+      62,
+      69,
+      91,
+      150,
+      50
+    ],
+    "postcount": [
+      44,
+      55,
+      41,
+      67,
+      22,
+      43,
+      45,
+      67,
+      90,
+      15
+    ]
+  },
+  "board": [
+    {
+      "id": 1,
+      "title": "제목1",
+      "user": "유저1",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest"
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 2
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 3
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 4
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 5
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 6
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 7
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 8
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 9
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 10
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 11
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 12
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 13
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 14
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 15
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 16
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 17
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 18
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 19
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 20
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 21
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 22
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 23
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 24
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 25
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 26
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 27
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 28
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 29
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 30
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 31
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 32
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 33
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 34
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 35
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 36
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 37
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 38
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 39
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 40
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 41
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 42
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 43
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 44
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 45
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 46
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 47
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 48
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 49
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 50
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 51
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 52
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 53
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 54
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 55
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 56
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 57
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 58
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 59
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 60
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 61
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 62
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 63
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 64
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 65
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 66
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 67
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 68
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 69
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 70
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 71
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 72
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 73
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 74
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 75
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 76
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 77
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 78
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 79
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 80
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 81
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 82
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 83
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 84
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 85
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 86
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 88
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 89
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 90
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 91
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 94
+    },
+    {
+      "title": "제목테스트",
+      "user": "유저",
+      "date": "22.08.30",
+      "text": "testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest",
+      "id": 95
+    },
+    {
+      "title": "게시글 작성 테스트!!!",
+      "user": "유저1",
+      "date": "22.10.18",
+      "text": "<p>마ㅣㅓㄴㅇ로마ㅓㅣㄴ오ㅜㅍ챠ㅕ뮫지ㅕㅑ푸미ㅑㄴ우퍛ㅁ누얓폄ㄴ우초ㅜ</p>",
+      "id": 101
+    },
+    {
+      "title": "제목은 이렇게 쓰는겁니다.",
+      "user": "유저1",
+      "date": "2022.9.18",
+      "text": "<p>ㅁㄴ이ㅑ로먀녀오</p>",
+      "id": 102
+    },
+    {
+      "title": "안녕하세요 winning i 를 만들고있습니다.",
+      "user": "winning-i",
+      "date": "2022.9.18",
+      "text": "<ul><li class=\"ql-align-center\">위닝아이는 고객을 위한 혁신적인 서비스로&nbsp;새로운 세상을 만들기 위해 노력합니다.</li><li class=\"ql-align-center\">Sustainable Growth위닝아이는 고객에게 최고의 품질을 제공하고,&nbsp;최고의 경쟁력을 갖추기 위한 끊임없는 노력과&nbsp;지속적인 성장을 하겠습니다.</li><li class=\"ql-align-center\">Leading Biometrics Technology위닝아이는 생각의 한계를 넘어 상식을 바꾸는창조, 도전, 열정으로 바이오인식 기술의 패러다임을선도하는 글로벌 기업이 되겠습니다.</li></ul>",
+      "id": 103
+    },
+    {
+      "title": "위닝아이 게시판 테스트",
+      "user": "winning-i",
+      "date": "2022.9.19",
+      "text": "<p>하나둘셋</p>",
+      "id": 104
+    },
+    {
+      "title": "게시글 카운트 체크",
+      "user": "winning-i",
+      "date": "2022.9.19",
+      "text": "<p>게시글</p>",
+      "id": 105
+    },
+    {
+      "title": "12341234",
+      "user": "winning-i",
+      "date": "2022.9.19",
+      "text": "<p>13241234</p>",
+      "id": 106
+    },
+    {
+      "title": "제목 테스트",
+      "user": "winning-i",
+      "date": "2022.9.19",
+      "text": "<p>12312321</p>",
+      "id": 107
+    }
+  ]
 }
