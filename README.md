@@ -35,7 +35,7 @@
 
 > JavaScript
 
-> React.js
+> React
 
 > styled-components
 
